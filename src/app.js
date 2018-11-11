@@ -6,7 +6,7 @@ var app = express();
 app.use(express.static(path.join(__dirname, '../client/build')));
 
 app.get('/api/data/', (req, res) => {
-    res.send('{"result":"ue"}');
+    res.send('{"result":"true"}');
 });
 
 app.get('*', (req, res) => {
