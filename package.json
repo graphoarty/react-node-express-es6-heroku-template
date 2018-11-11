@@ -7,7 +7,7 @@
     "start": "npm run build && node ./build/bin/www",
     "build": "npm run clean && npm run babel-build",
     "babel-build": "babel -d ./build ./src -s",
-    "clean": "mkdir build",
+    "clean": "rm -rf ./build && mkdir build",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "dependencies": {
